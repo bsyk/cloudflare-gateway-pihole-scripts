@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 
 import {
@@ -132,6 +132,15 @@ console.log("\n\n");
 
 (async () => {
   if (DRY_RUN) {
+    // In Dry-run, dump the block domains for debugging
+    const writeStream = createWriteStream('domains.txt');
+    domains.forEach((domain) => {
+        writeStream.write(domain + '\n');
+    });
+    writeStream.end(() => {
+        console.log('All domains written to domains.txt');
+    });
+
     console.log(
       "Dry run complete - no lists were created. If this was not intended, please remove the DRY_RUN environment variable and try again."
     );

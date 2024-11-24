@@ -1,0 +1,9 @@
+netflix.com
+netflix.net
+rs6.net
+api.segment.io
+cdn.segment.com
+spclient.wg.spotify.com
+cloudflare.com
+cloudflare.net
+api2.branch.io
