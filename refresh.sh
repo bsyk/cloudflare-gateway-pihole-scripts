@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Record the date to the log
+date
+
 # Fetch the latest changes from the remote repository
 git fetch origin
 git checkout auto
