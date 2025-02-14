@@ -1,0 +1,14 @@
+# Netflix
+netflix.com
+netflix.net
+
+# Cloudflare
+cloudflare.com
+cloudflare.net
+
+# Strava App
+api.segment.io
+cdn.segment.com
+
+# Spotify
+spclient.wg.spotify.com
